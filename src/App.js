@@ -7,11 +7,11 @@ const App = () => {
     console.log(process.env.PUBLIC_URL);
     return (
         // <Home/>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
             <Switch>
                 <Route path='/' exact component={Home} />
                 <Route
-                    path={`${process.env.PUBLIC_URL}/cards`}
+                    path={`/cards`}
                     exact
                     component={Cards}
                 />
@@ -21,3 +21,5 @@ const App = () => {
 };
 
 export default App;
+
+// "homepage": "https://devsmranjan.github.io/react-animations-css-js",
