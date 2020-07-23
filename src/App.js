@@ -4,6 +4,7 @@ import Cards from './pages/cards';
 import Home from './pages/home';
 
 const App = () => {
+    console.log(process.env.PUBLIC_URL);
     return (
         // <Home/>
         <Router basename={process.env.PUBLIC_URL}>
