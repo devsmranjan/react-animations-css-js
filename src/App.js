@@ -5,10 +5,11 @@ import Home from './pages/home';
 
 const App = () => {
     return (
-        <Router>
-            <Route path='/' exact component={Home} />
-            <Route path='/cards' exact component={Cards} />
-        </Router>
+        // <Router>
+        //     <Route path='/' exact component={Home} />
+        //     <Route path='/cards' exact component={Cards} />
+        // </Router>
+        <div>Hello World</div>
     );
 };
 
