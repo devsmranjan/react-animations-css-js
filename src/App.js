@@ -7,7 +7,7 @@ const App = () => {
     console.log(process.env.PUBLIC_URL);
     return (
         // <Home/>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route path='/' exact component={Home} />
                 <Route
