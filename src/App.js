@@ -5,11 +5,11 @@ import Home from './pages/home';
 
 const App = () => {
     return (
-        <Home/>
-        // <Router>
-        //     <Route path='/' exact component={Home} />
-        //     <Route path='/cards' exact component={Cards} />
-        // </Router>
+        // <Home/>
+        <Router basename={process.env.PUBLIC_URL}>
+            <Route path='/' exact component={Home} />
+            <Route path='/cards' exact component={Cards} />
+        </Router>
     );
 };
 
