@@ -24,25 +24,27 @@ const Card1 = () => {
     ];
 
     return (
-        <div className='container'>
-            {cards_list.map((card, index) => (
-                <div key={index} className='card'>
-                    <div
-                        className='circle'
-                        style={{ backgroundColor: card.color }}>
-                        <h2 className='title'>{card.title}</h2>
-                    </div>
-                    <div className='content'>
-                        <p className='description'>{card.description}</p>
-                        <a
-                            href='#!'
-                            className='btn'
+        <div id="card-1">
+            <div className='container'>
+                {cards_list.map((card, index) => (
+                    <div key={index} className='card'>
+                        <div
+                            className='circle'
                             style={{ backgroundColor: card.color }}>
-                            Read More
-                        </a>
+                            <h2 className='title'>{card.title}</h2>
+                        </div>
+                        <div className='content'>
+                            <p className='description'>{card.description}</p>
+                            <a
+                                href='#!'
+                                className='btn'
+                                style={{ backgroundColor: card.color }}>
+                                Read More
+                            </a>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };

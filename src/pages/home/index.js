@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ routerProps }) => {
     return (
         <div>
-            <a href='/cards'>Cards</a>
+            <Link to='/cards'>Cards</Link>
         </div>
     );
 };

@@ -1,21 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Cards from './pages/cards';
 import Home from './pages/home';
 
 const App = () => {
-    console.log(process.env.PUBLIC_URL);
+    // console.log(this.state);
+    console.log('This is the process.env', process.env.PUBLIC_URL);
+
     return (
         // <Home/>
-        <Router basename={process.env.PUBLIC_URL}>
-            <Switch>
-                <Route path='/' exact component={Home} />
-                <Route
-                    path={`/cards`}
-                    exact
-                    component={Cards}
-                />
-            </Switch>
+        <Router>
+            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/cards'} component={Cards} />
         </Router>
     );
 };
